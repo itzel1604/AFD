@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer AFD</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+            color: darkblue;
+        }
+        table{
+           margin-left: 34%;
+        }
+        th,
+        td {
+            border: 1px solid #ccc;
+            width: 50px;
+            height: 20px;
+        }
+        button{
+            background-color: rgb(255, 255, 255);
+            width: 30%;
+            height: 30px;
+            border-radius: 5px;
+            border-color: blue;
+            font-size: 14pt;
+            font-weight: 600;
+            margin: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h4>Lenguaje:</h4>
+        <label>Σ={a,b,c}. El conjunto de cadenas que inician en la sub-cadena ac o no terminan en la sub-cadena ab.</label>
+    </div>
+    <div>
+        <h4>Tabla de transiciones:</h4>
+        <table>
+            <tr>
+                <th></th>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+            </tr>
+            <tr>
+                <th>S1</th>
+                <td>S2</td>
+                <td>S4</td>
+                <td>S4</td>
+            </tr>
+            <tr>
+                <th>S2</th>
+                <td>S5</td>
+                <td>S6</td>
+                <td>S3</td>
+            </tr>
+            <tr>
+                <th>S3</th>
+                <td>S3</td>
+                <td>S3</td>
+                <td>S3</td>
+            </tr>
+            <tr>
+                <th>S4</th>
+                <td>S5</td>
+                <td>S4</td>
+                <td>S4</td>
+            </tr>
+            <tr>
+                <th>S5</th>
+                <td>S5</td>
+                <td>S6</td>
+                <td>S4</td>
+            </tr>
+            <tr>
+                <th>S6</th>
+                <td>S5</td>
+                <td>S4</td>
+                <td>S4</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <label>Ingresa la cadena para validar:</label>
+        <input type="text" id="txtCadena">
+    </div>
+
+    <button id="verificar">Verificar cadena</button>
+    <script src="afd1.js"></script>
+</body>
+
+</html>

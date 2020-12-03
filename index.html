@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <title>Automatas Finitos</title>
+    <style>
+        body{
+            background: rgba(144, 144, 144, 0.397);
+            text-align: center;
+        }
+        h1{
+            color: darkblue;
+        }
+        label{
+            color: darkblue;
+            font-size: 14pt;
+        }
+        button {
+            height: 80px;
+            width: 80%;
+            background:  rgba(255, 255, 255, 0.76);
+            border-radius: 5px;
+            border-color: rgb(0, 17, 255);
+            margin-bottom: 10px;
+            font-size: 14pt;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Automatas Finitos Deterministicos</h1>
+    <label>Automatas disponibles:</label>
+    <div>
+        <button id="AFD1">
+            Σ={a,b,c}. El conjunto de cadenas que inician en la <br> sub-cadena ac o no terminan en la sub-cadena ab.
+        </button>
+    </div>
+    <div>
+        <button id="AFD2">
+            Σ={a,b,c}. El conjunto de cadenas que inician en la <br> sub-cadena ac y no terminan en la sub-cadena ab.
+        </button>
+    </div>
+
+    <script src="windows.js"></script>
+
+</body>
+
+</html>
